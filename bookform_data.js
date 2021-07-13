@@ -65,7 +65,7 @@ function refreshData(){
     const completedBooks = document.getElementById("finishedBookListDetail");
 
     for (book of books){
-        const newBook = createBook(book.title, book.author, book.year, book.isCOmpleted);
+        const newBook = createBook(book.title, book.author, book.year, book.isCompleted);
         newBook[bookItemID] = book.id;
 
         if(book.isCompleted){

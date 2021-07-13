@@ -39,6 +39,17 @@
                         </div>
                     </form>
                 </div>
+
+                <div class = "child-content" id = "searchBox">
+                    <form id = "searchForm">
+                        <h2>Search Book</h2>
+                        <label for = "search">Example = "title=Halliday", "author=Purcell", "year=2020"</label><br>
+                        <input id = "search" type = "text" name = "search" placeholder= "Search...." value = "" maxlength = "100" required><br>
+                        <input class = "button" id = "searchButton" type = "submit" value = "Search book data">
+                        <div id = "searchedBookListDetail" align = "left"></div>
+                    </form>
+                </div>
+                
                 
                 <div class = "child-content finished" id = "finishedBookList" style = "display: inline-block;">
                     <h2>Finished Book List</h2>
@@ -49,6 +60,8 @@
                     <h2>Unfinished Book List</h2>
                     <div id = "unfinishedBookListDetail" align = "left"></div>
             </div>
+
+            
 
 
         <script src = "bookform_data.js" type = "text/javascript"></script>
