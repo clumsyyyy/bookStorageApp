@@ -1,12 +1,99 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+@media screen and (max-width: 1024px){
+    header{
+        font-size: 30px !important;
+        padding-top: 30px !important;
+    }
+    .child-content{
+        width: 80% !important;
+        margin: 20px auto !important;
+    }
+
+    #user-form{
+        overflow: hidden;
+        min-height: 850px;
+    }
+    #finishedBookList, #unfinishedBookList{
+        width: 80% !important;
+        margin: 20px auto !important;
+        height: 600px !important;
+    }
+    #searchBox{
+        max-width: 1000px
+    }
+    h1{
+        margin-bottom: -30px !important;
+    }
+    h2{
+        font-size: 50px !important;
+    }
+    label{
+        font-size: 30px !important;
+    }
+    input::placeholder{
+        font-size: 30px !important;
+    }
+    input{
+        min-height: 75px !important;
+        padding-left: 30px !important;
+    }
+    #isCompleted{
+        min-height: 50px !important;
+    }
+
+    #submitButton, #searchButton{
+        font-size: 30px;
+    }
+
+    .restore-button, .finished-button{
+        font-size: 30px !important;
+        width: 150px !important;
+        display: inline !important;
+        margin-bottom: -100px !important;
+        margin-right: 175px !important;
+    }
+
+    .delete-button{
+        font-size: 30px !important;
+        width: 150px !important;
+        display: inline !important;
+    }
+    .listBox, .searchBox{
+        height: 200px !important;
+        
+    }
+    h3{
+        font-size: 35px !important;
+        margin-bottom: -40px !important;
+    }
+    h4, p{
+        font-size: 30px !important;
+    }
+
+}
 body{
-    background: #002159;
     font-family: Poppins;
+    background: rgb(0,26,70);
+    background: linear-gradient(90deg, rgba(0,26,70,1) 0%, rgba(0,33,91,1) 45%, rgba(0,21,57,1) 91%);
+}
+
+h1, h2{
+    font-family: Montserrat;
+    font-weight: "bold";
+}
+
+h3{
+    font-size: 15px;
+}
+h4{
+    font-weight: normal;
 }
     
 header{
     color: #002159;
-    background-color: white;
+    background-color: rgb(230, 230, 230);
     text-align: left;
     padding: 10px;
     padding-left: 30px;
@@ -109,6 +196,8 @@ table{
     display: inline-block;
     position: relative;
     max-height: 550px;
+    background-color: rgb(230, 230, 230);
+
 }
 
 #searchBox{
@@ -119,6 +208,8 @@ table{
     position: relative;
     max-height: 525px;
     margin-bottom: -66px;
+    background-color: rgb(230, 230, 230);
+
 }
 
 #finishedBookList{
@@ -126,14 +217,32 @@ table{
     margin-left: 1%;
     margin-right: 2%;
     width: 40%;
-    display: inline-block;
-    position: relative;
+    display: block;
+    position: static;
+    background-color: rgb(230, 230, 230);
+    overflow: auto;
+    height: 400px;
+
 }
 
 #unfinishedBookList{
     margin-top: 1%;
     margin-right: 1%;
     width: 40%;
-    display: inline-block;
-    position: relative;
+    display: block;
+    position: static;
+    background-color: rgb(230, 230, 230);
+    overflow: auto;
+    height: 400px;
+
+}
+
+footer{
+    background-color: rgb(230, 230, 230);
+    color: #002159;
+    width: 15%;
+    height: 5%;
+    border-radius: 10px;
+    font-family: Montserrat;
+    padding: 1px;
 }
